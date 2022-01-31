@@ -1,0 +1,6 @@
+---
+- name: This is a hello-world example
+  hosts: 10.131.73.24
+  tasks:
+    - name: Create a file
+      cmd: "touch ~/helloooooooooo"
