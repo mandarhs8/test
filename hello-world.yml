@@ -1,6 +1,9 @@
 ---
-- name: This is a hello-world example
-  hosts: 10.131.73.24
+- name: Echo 
+  hosts: 127.0.0.1
+  connection: local
+
   tasks:
-    - name: Create a file
-      cmd: "touch ~/helloooooooooo"
+  - name: Print debug message
+    debug:
+      msg: Hello, world!
