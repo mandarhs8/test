@@ -30,4 +30,4 @@ params:
   ANSIBLE_EXECUTION_DIR:
 
 run:
-  path: test.sh
+  path: ansible-test.sh
