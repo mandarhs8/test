@@ -10,7 +10,7 @@ image_resource:
     tag: 0.0.1
 
 inputs:
-- name: tasks/
+- name: tasks
 
 outputs:
 - name: ansible-outputs
