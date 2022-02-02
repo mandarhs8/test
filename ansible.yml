@@ -1,0 +1,33 @@
+platform: linux
+
+image_resource:
+  type: registry-image
+  source:
+    # hub.comcast.net/concourse/cloud-tools is a version of
+    # github.comcast.com/aae/cloud-tools on which jump has
+    # been upgraded to 2.6
+    repository: hub.comcast.net/concourse/cloud-tools
+    tag: 0.0.1
+
+outputs:
+- name: ansible-outputs
+
+params:
+  ANSIBLE_USER:
+  ANSIBLE_USER_PRIVATE_KEY:
+  ANSIBLE_USER_PUBLIC_KEY:
+  ANSIBLE_INVENTORY:
+  ANSIBLE_PLAYBOOK:
+  ANSIBLE_FORCE_COLOR: true
+  ANSIBLE_EXTRA_VARS:
+  ANSIBLE_LIMIT:
+  ANSIBLE_VAULT_PASSWORD:
+  ANSIBLE_TAGS:
+  ANSIBLE_SKIP_TAGS:
+  ANSIBLE_VERBOSITY:
+  AUTOBAHN_CERT_PATH:
+  PRE_EXECUTION_COMMAND:
+  ANSIBLE_EXECUTION_DIR:
+
+run:
+  path: test.sh
