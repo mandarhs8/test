@@ -11,6 +11,7 @@ image_resource:
 
 inputs:
 - name: tasks
+  optional: true
 
 outputs:
 - name: ansible-outputs
@@ -33,4 +34,4 @@ params:
   ANSIBLE_EXECUTION_DIR:
 
 run:
-  path: tasks/ansible-test.sh
+  path: test/tasks/ansible-test.sh
