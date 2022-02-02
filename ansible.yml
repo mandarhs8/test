@@ -9,6 +9,9 @@ image_resource:
     repository: hub.comcast.net/concourse/cloud-tools
     tag: 0.0.1
 
+inputs:
+- name: tasks/
+
 outputs:
 - name: ansible-outputs
 
@@ -30,4 +33,4 @@ params:
   ANSIBLE_EXECUTION_DIR:
 
 run:
-  path: ansible-test.sh
+  path: tasks/ansible-test.sh
